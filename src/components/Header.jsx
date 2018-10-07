@@ -8,7 +8,6 @@ import {
   Nav,
   NavItem,
  } from 'reactstrap';
- import { FaUser } from 'react-icons/fa';
 
 export default class Header extends React.Component {
   constructor(props) {
