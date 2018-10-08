@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BigLogo from "../assets/img/logobig.png"
+import logofooter from '../assets/img/logowhite.png';
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import {
@@ -15,6 +16,7 @@ import {
   CardSubtitle
 } from 'reactstrap'
 import { FaStar } from 'react-icons/fa';
+import Footer from '../components/Footer';
 
 class MovieBrowser extends Component {
 
@@ -148,6 +150,7 @@ class MovieBrowser extends Component {
           <Row>
             {movies}
           </Row>
+          <Footer/>
         </Container>
       </div>
     );

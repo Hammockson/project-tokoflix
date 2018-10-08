@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import logofooter from '../assets/img/logowhite.png';
 import { Link } from 'react-router-dom'
 import {
     Badge,
     Button,
-    Card,
-    CardBody,
     Container,
     Col,
     Row,
@@ -15,6 +14,7 @@ import {
     ModalFooter
 } from 'reactstrap' 
 import { FaArrowLeft } from 'react-icons/fa';
+import Footer from '../components/Footer';
 
 
 class MovieDetail extends Component {
@@ -140,6 +140,7 @@ class MovieDetail extends Component {
                     <p>Your Balance: <Badge color="warning">{this.state.balance}</Badge></p>
                 </Col>
             </Row>
+            <Footer/>
         </Container>
       </div>
     )
